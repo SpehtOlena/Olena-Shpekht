@@ -1,0 +1,29 @@
+.App_content {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.recipes {
+	background-color: #F8F8F8;
+}
+
+.recipes_container {
+	padding-top: 67px;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	max-width: 1600px;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 67px;
+}
+
+.recipe_items {
+	display: flex;
+	gap: 25px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}

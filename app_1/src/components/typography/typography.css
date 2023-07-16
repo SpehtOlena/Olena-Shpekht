@@ -1,0 +1,16 @@
+.typography {}
+
+.typography-title {
+	color: #000;
+	font-family: Poppins;
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.typography-text {
+	color: rgba(0, 0, 0, 0.50);
+	font-family: Poppins;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 1.5;
+}
