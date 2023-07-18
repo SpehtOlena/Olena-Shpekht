@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 const Button = styled.button`
-	background-color: ${props => props.primary ? '#F86507' : '#F8A607'};
-	color: ${props => props.primary ? 'red' : '#FFFFFF'};
+	background-color: #F8A607;
+	color: #FFFFFF;
 	text-aling: center;
 	font-family: Poppins, serif;
-	font-size: 24px;
+	font-size: ${props => props.primary ? '16px' : '24px'};
 	padding: 18px 46px;
 	border: none;
-	border-radius: 7px;
+	border-radius: ${props => props.primary ? '0px' : '7px'};
 	cursor: pointer;
 	&:hover {
 		background-color: #F86507;

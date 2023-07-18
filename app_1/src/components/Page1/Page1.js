@@ -7,22 +7,22 @@ const recipes = [
 	{
 		name: "Супи",
 		description: "Смачні і ситні страви на основі бульйону або закваски.",
-		imgUrl: "https://robohash.org/soups.jpg"
+		imgUrl: "https://picsum.photos/id/117/300/200"
 	},
 	{
 		name: "Паста",
 		description: "Апетитна італійська кухня з різноманітними видами макаронних виробів.",
-		imgUrl: "https://robohash.org/pasta.jpg"
+		imgUrl: "https://picsum.photos/id/17/300/200"
 	},
 	{
 		name: "Салати",
 		description: "Легкі та освіжаючі страви зі свіжих овочів та соусів.",
-		imgUrl: "https://robohash.org/salads.jpg"
+		imgUrl: "https://picsum.photos/id/187/300/200"
 	},
 	{
 		name: "Десерти",
 		description: "Солодкі випічка, морозиво та інші солодощі для задоволення вашого післядегустаційного смаку.",
-		imgUrl: "https://robohash.org/desserts.jpg"
+		imgUrl: "https://picsum.photos/id/167/300/200"
 	}
 ];
 
