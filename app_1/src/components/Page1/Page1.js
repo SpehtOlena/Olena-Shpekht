@@ -1,6 +1,6 @@
-import Banner from "../banner/banner";
+import Banner from "../Banner/Banner";
 import RecipeCard from "../RecipeCard/RecipeCard";
-import Typography from "../typography/typography";
+import Typography from "../Typography/Typography";
 import './Page1.css'
 
 const recipes = [
@@ -35,7 +35,7 @@ const Page1 = () => {
 					<Typography type={'title'}>Recipes</Typography>
 					<div className="recipe_items">
 						{
-							recipes.map(value => <RecipeCard item={value}></RecipeCard>)
+							recipes.map(value => <RecipeCard item={value} key={value.name} />)
 						}
 					</div>
 				</div>

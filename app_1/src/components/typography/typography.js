@@ -1,4 +1,4 @@
-import './typography.css'
+import './Typography.css'
 
 const Typography = ({ type, children }) => {
 	switch (type) {

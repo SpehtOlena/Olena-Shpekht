@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 const Button = styled.button`
-	background-color: #F8A607;
+	background-color: ${props => props.search ? '#FF8888' : '#F8A607'};
 	color: #FFFFFF;
-	text-aling: center;
+	text-align: center;
 	font-family: Poppins, serif;
 	font-size: ${props => props.primary ? '16px' : '24px'};
 	padding: 18px 46px;

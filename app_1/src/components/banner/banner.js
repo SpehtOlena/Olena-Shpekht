@@ -1,7 +1,7 @@
-import './banner.css';
+import './Banner.css';
 import bannerPhoto from '../../img/banner_img.png';
-import Button from '../button/button';
-import Typography from '../typography/typography';
+import Button from '../Button/Button';
+import Typography from '../Typography/Typography';
 
 const Banner = () => {
 	return (

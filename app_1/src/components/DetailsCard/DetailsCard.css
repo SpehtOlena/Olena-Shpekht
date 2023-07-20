@@ -1,0 +1,50 @@
+.detailsItem {
+	width: 29%;
+	height: 85%;
+	display: flex;
+	flex-direction: column;
+	background: #FFF;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+.detailsItem:hover {
+	scale: 1.03;
+	box-shadow: 10px 12px 6px 0px rgba(95, 93, 93, 0.15);
+}
+
+.detailsImg {
+	width: 100%;
+}
+
+.detailsContent {
+	padding: 7%;
+}
+
+.detailsTitle {
+	display: block;
+	color: #000;
+	font-family: Quando;
+	font-size: 24px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.detailsSubtitle {
+	display: block;
+	color: #000;
+	font-family: Quando;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+.detailsDescription {
+	color: #000;
+	font-family: Quando;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 30px;
+	/* 187.5% */
+}

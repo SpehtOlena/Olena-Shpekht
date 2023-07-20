@@ -1,0 +1,11 @@
+.IngrItems {
+	display: flex;
+	justify-content: space-between;
+	background: #FBFBFB;
+	margin: 20px 31px;
+	padding: 10px 60px;
+	color: rgba(0, 0, 0, 0.70);
+	font-family: Quando;
+	font-size: 20px;
+	font-weight: 400;
+}

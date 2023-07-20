@@ -1,5 +1,6 @@
 import './List.css';
-import Button from '../button/button';
+import Button from '../Button/Button';
+import recipesLink from './ListArray';
 
 
 const ListCard = ({ item }) => {

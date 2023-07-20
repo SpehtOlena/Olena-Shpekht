@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Page1 from "./components/Page1/Page1";
 import List from "./components/List/List";
 import './App.css';
-import Menu from "./components/menu/menu";
+import Menu from "./components/Menu/Menu";
 import Search from "./components/Search/Search";
 
 
@@ -24,7 +24,7 @@ const menuItems = [
 ]
 
 const App = () => {
-	const [activePage, setActivePage] = useState(Page1);
+	const [activePage, setActivePage] = useState(<Page1 />);
 	return (
 		<div className="App">
 			<Menu setActivePage={setActivePage} items={menuItems} />

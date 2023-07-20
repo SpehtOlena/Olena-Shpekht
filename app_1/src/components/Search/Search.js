@@ -1,9 +1,22 @@
 import './Search.css';
+import DetailsCard from '../DetailsCard/DetailsCard';
+import DetailsIngr from '../DetailsIngr/DetailsIngr';
+import Description from '../Description/Description';
+import Button from '../Button/Button';
 
 const Search = () => {
 	return (
 		<div className="Search">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa provident debitis! Consequuntur quasi voluptatibus atque. Earum non velit quasi debitis laudantium autem tempore. Fugit molestiae aut dolorum quam quod non neque, nulla quo aspernatur eligendi blanditiis tempore modi consequatur ex ipsum, accusantium mollitia aliquid quos dicta, beatae maxime voluptate?
+			<div className="search_container">
+				<DetailsCard />
+				<div className="searchContent">
+					<DetailsIngr />
+					<Description />
+					<div className="SearchButton">
+						<Button search={true}>Back</Button>
+					</div>
+				</div>
+			</div>
 		</div>
 	)
 }
