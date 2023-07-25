@@ -1,21 +1,16 @@
 import './Search.css';
-import DetailsCard from '../DetailsCard/DetailsCard';
-import DetailsIngr from '../DetailsIngr/DetailsIngr';
-import Description from '../Description/Description';
+// import DetailsCard from '../DetailsCard/DetailsCard';
+// import DetailsIngr from '../DetailsIngr/DetailsIngr';
+// import Description from '../Description/Description';
+import { Detail } from '../List/List';
 import Button from '../Button/Button';
 
 const Search = () => {
 	return (
 		<div className="Search">
 			<div className="search_container">
-				<DetailsCard />
-				<div className="searchContent">
-					<DetailsIngr />
-					<Description />
-					<div className="SearchButton">
-						<Button search={true}>Back</Button>
-					</div>
-				</div>
+				<Detail />
+
 			</div>
 		</div>
 	)
