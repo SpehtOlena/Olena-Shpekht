@@ -1,0 +1,12 @@
+.Modal {
+	position: relative;
+}
+
+.SearchButton {
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	right: 0;
+}

@@ -2,7 +2,6 @@ import './Search.css';
 import DetailsCard from '../DetailsCard/DetailsCard';
 import DetailsIngr from '../DetailsIngr/DetailsIngr';
 import Description from '../Description/Description';
-import Button from '../Button/Button';
 
 const Search = () => {
 	return (
@@ -12,9 +11,7 @@ const Search = () => {
 				<div className="searchContent">
 					<DetailsIngr />
 					<Description />
-					<div className="SearchButton">
-						<Button search={true}>Back</Button>
-					</div>
+
 				</div>
 			</div>
 		</div>

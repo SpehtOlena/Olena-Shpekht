@@ -3,9 +3,6 @@ import Page1 from "./components/Page1/Page1";
 import List from "./components/List/List";
 import './App.css';
 import Menu from "./components/Menu/Menu";
-import Search from "./components/Search/Search";
-
-
 
 const menuItems = [
 	{
@@ -16,10 +13,6 @@ const menuItems = [
 
 		label: 'List',
 		element: <List />
-	},
-	{
-		label: 'Search',
-		element: <Search />
 	}
 ]
 
