@@ -9,6 +9,7 @@ import Search from '../Search/Search';
 
 const List = ({ item }) => {
 	const [modalOpen, setModalOpen] = useState(false);
+	const buttonId = null;
 	const closeModal = () => {
 		setModalOpen(false)
 	}
@@ -17,19 +18,19 @@ const List = ({ item }) => {
 			<ul className="List_container">
 				{
 					recipesLink.map(item => (
-						<li key={item.id} className='dishItem'>
-							<img className='dishImage' src={item.img} alt={`${item.name} photo`} />
+						<li key={item.ident} className='dishItem'>
+							<img key={item.ident} className='dishImage' src={item.img} alt={`${item.name} photo`} />
 							<h3 className='dishName'>{item.name}</h3>
 							<ul className='dishingredients'>
 								{
 									item.ingredients.map((subItem, index) => (
-										<li key={index}>
+										<li key={item.index}>
 											{subItem}
 										</li>
 									))
 								}
 							</ul>
-							<Button onClick={() => setModalOpen(true)} primary={true}>Show detailss</Button>
+							<Button onClick={() => setModalOpen(true)} buttonId={item.id} primary={true.toString()}>Show detailss</Button>
 							<Modal isOpen={modalOpen} onClose={closeModal}>
 								<Search />
 
@@ -40,7 +41,7 @@ const List = ({ item }) => {
 
 			</ul>
 
-		</div>
+		</div >
 
 	)
 }

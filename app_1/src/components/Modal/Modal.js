@@ -8,7 +8,7 @@ const Modal = ({ isOpen, onClose, children }) => {
 	return ReactDOM.createPortal(
 		<div className="Modal">
 			<div className="SearchButton">
-				<Button onClick={onClose} search={true}>Back</Button>
+				<Button onClick={onClose} search={true.toString()}>Back</Button>
 			</div>
 			{children}
 		</div>,

@@ -1,20 +1,52 @@
 import './Search.css';
-import DetailsCard from '../DetailsCard/DetailsCard';
-import DetailsIngr from '../DetailsIngr/DetailsIngr';
-import Description from '../Description/Description';
+import recipesLink from '../List/ListArray';
+import Typography from '../Typography/Typography';
 
 const Search = () => {
 	return (
 		<div className="Search">
 			<div className="search_container">
-				<DetailsCard />
-				<div className="searchContent">
-					<DetailsIngr />
-					<Description />
+				{
+					recipesLink.map(item => (
+						<li key={item.id1} className='dishItem'>
+							<img key={item.img1} className='dishImage' src={item.img} alt={`${item.name} photo`} />
+							<h3 className='dishName'>{item.name}</h3>
+							<div className='dishName'>
+								<Typography type={'text'}>
+									{item.description}
+								</Typography>
 
-				</div>
+							</div>
+							<ul>
+								{
+									item.allIngredients.map((subItem, index) => (
+										<li key={item.index1} className='IngrItems'>
+											{subItem}<input type='checkbox' />
+										</li>
+									))
+								}
+							</ul>
+							<div className='Description'>
+								<Typography type={'text'}>
+									{item.cooking}
+								</Typography>
+
+							</div>
+
+						</li>
+					))
+				}
 			</div>
 		</div>
 	)
 }
+
+
+{/* <DetailsCard />
+				<div className="searchContent">
+					<DetailsIngr />
+					<Description />
+
+				</div> */}
+
 export default Search
