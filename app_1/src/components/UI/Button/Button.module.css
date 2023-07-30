@@ -6,6 +6,8 @@
 	gap: 8px;
 	border-radius: 8px;
 	background: #1E6F9F;
+	border: 1px solid #1E6F9F;
+	outline: none;
 	color: #F2F2F2;
 	transition: all 0.3s ease 0s;
 	font-size: 16px;
@@ -16,4 +18,20 @@
 .Button:hover {
 	cursor: pointer;
 	background: #4EA8DE;
+	transition: all 0.5s ease 0s;
+}
+
+.delete {
+	position: absolute;
+	right: 16px;
+	cursor: pointer;
+	color: #808080;
+}
+
+.delete:hover {
+	background-color: #333333;
+	color: #E25858;
+	transform: scale(1.1);
+	border-radius: 4px;
+	transition: all 0.3s ease 0s;
 }

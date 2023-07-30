@@ -1,10 +1,26 @@
-.checkbox {
-	width: 28px;
-	height: 28px;
-	position: relative;
-	margin: 20px auto;
-	background: #fcfff4;
-	border-radius: 50%;
-	box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+.checkbox>img {
+	width: 18px;
+	height: 18px;
+	color: #fff;
+}
 
+.icon {
+	color: #4EA8DE;
+	opacity: 0.2;
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+}
+
+.icon:hover {
+	color: #1E6F9F;
+}
+
+.completeIcon {
+	color: #5E60CE;
+}
+
+.completeIcon:hover {
+	color: #8284FA;
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
 }

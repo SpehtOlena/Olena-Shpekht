@@ -1,5 +1,5 @@
 import LogoPhoto from "./rocket.png";
-import styleLogo from './Logo.module.css';
+import styleLogo from './logo.module.css';
 
 const Logo = () => {
 	return (

@@ -1,8 +1,13 @@
-import styleInput from './Input.module.css'
+import styleInput from './input.module.css'
 
-const Input = () => {
+const Input = ({ type, value, onChange, placeholder }) => {
 	return (
-		<input type={'text'} placeholder={'Adicione uma nova tarefa'} className={styleInput.input} />
+		<input
+			type={type}
+			value={value}
+			placeholder={placeholder}
+			className={styleInput.input}
+		/>
 	)
 }
 export default Input

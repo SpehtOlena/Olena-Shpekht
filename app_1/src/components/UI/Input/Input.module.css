@@ -1,5 +1,4 @@
 .input {
-	display: block;
 	padding: 16px;
 	align-items: center;
 	gap: 8px;
@@ -7,13 +6,19 @@
 	border-radius: 8px;
 	border: 1px solid #0D0D0D;
 	background: #262626;
-	color: #808080;
+	color: #F2F2F2;
 	font-family: Inter;
 	font-size: 16px;
 	line-height: 140%;
 }
 
 .input:focus {
-	color: #F2F2F2;
 	border: 1px solid #5E60CE;
+	transition: all 0.2s ease 0s;
+}
+
+::placeholder {
+	font-size: 16px;
+	line-height: 140%;
+	color: #808080;
 }
