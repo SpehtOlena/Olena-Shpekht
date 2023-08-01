@@ -3,11 +3,13 @@ import recipesLink from '../List/ListArray';
 import Typography from '../Typography/Typography';
 
 const Search = () => {
+	const recipeModal = recipesLink.filter(recipe =>
+		recipe.id === 4);
 	return (
 		<div className="Search">
 			<div className="search_container">
 				{
-					recipesLink.map(item => (
+					recipeModal.map(item => (
 						<li key={item.id1} className='dishItem'>
 							<img key={item.img1} className='dishImage' src={item.img} alt={`${item.name} photo`} />
 							<h3 className='dishName'>{item.name}</h3>
@@ -20,7 +22,7 @@ const Search = () => {
 							<ul>
 								{
 									item.allIngredients.map((subItem, index) => (
-										<li key={item.index1} className='IngrItems'>
+										<li key={item.index} className='IngrItems'>
 											{subItem}<input type='checkbox' />
 										</li>
 									))
@@ -49,4 +51,4 @@ const Search = () => {
 
 				</div> */}
 
-export default Search
+export default Search 
