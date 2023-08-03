@@ -1,14 +1,13 @@
 import { useState } from 'react';
 import './App.css';
 import AddUsers from './components/AddUsers/AddUsers';
+import Body from './components/Body/Body';
 
-function App() {
+const App = () => {
 	const [activeUser, setActiveUser] = useState(null)
 	return (
 		<div className="App">
-			{!!activeUser ? <div>
-				{activeUser.name}
-			</div> : <AddUsers />}
+			{!!activeUser ? <Body activeUser={activeUser} setActiveUser={setActiveUser} /> : <AddUsers activeUser={activeUser} setActiveUser={setActiveUser} />}
 
 		</div >
 	);

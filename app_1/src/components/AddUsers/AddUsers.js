@@ -1,10 +1,11 @@
 import { Button, Form, Input } from 'antd';
-
+import axios from 'axios';
 
 
 const AddUsers = () => {
 	const onFinish = (values) => {
-		console.log('Success:', values);
+		axios
+			.post('http//localhost:3000/users', values)
 	};
 
 	const onFinishFailed = (errorInfo) => {
