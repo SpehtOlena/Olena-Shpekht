@@ -1,6 +1,6 @@
 import styleCheck from './checkbox.module.css';
 import { RiCheckboxBlankCircleLine } from 'react-icons/ri';
-import { RiCheckboxCircleFill } from 'react-icons/ri';
+import { BsCheckCircleFill } from 'react-icons/bs';
 
 const Checkbox = ({ onClick, complete }) => {
 	return (
@@ -8,7 +8,7 @@ const Checkbox = ({ onClick, complete }) => {
 			{
 				complete ?
 					<RiCheckboxBlankCircleLine size={22} className={styleCheck.icon} /> :
-					<RiCheckboxCircleFill size={22} className={styleCheck.completeIcon} />
+					<BsCheckCircleFill size={22} className={styleCheck.completeIcon} />
 			}
 		</div>
 	);

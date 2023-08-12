@@ -16,9 +16,9 @@ const Page = (e) => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		if (inputValue.trim()) {
+		if (inputValue) {
 			setTodos([...todos, { id: Date.now(), text: inputValue, complete: false }])
-			setInputValue()
+			setInputValue('')
 		}
 		return null
 	}

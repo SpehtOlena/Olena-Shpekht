@@ -13,8 +13,8 @@ const Task = ({ task, removeTask, handleComplete }) => {
 
 	return (
 		<div key={Task.id} className={style.task}>
-			<Checkbox onClick={handleClick} complete={true} />
-			<p className={complete ? style.text : style.text.complete}>{task.text}</p>
+			<Checkbox onClick={handleClick} complete={complete} />
+			<p className={complete ? style.text : style.text_complete}>{task.text}</p>
 			<Button type={'delete'} onClick={() => removeTask(task)} />
 		</div>
 	)
