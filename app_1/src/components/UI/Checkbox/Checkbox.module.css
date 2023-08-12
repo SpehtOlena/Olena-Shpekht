@@ -5,7 +5,7 @@
 }
 
 .icon {
-	color: #4EA8DE;
+	color: #fff;
 	opacity: 0.2;
 	transition: all 0.3s ease 0s;
 	cursor: pointer;
@@ -20,7 +20,7 @@
 }
 
 .completeIcon:hover {
-	color: #8284FA;
+	color: #c8c8d4;
 	transition: all 0.3s ease 0s;
 	cursor: pointer;
 }

@@ -3,6 +3,7 @@ import PlusIcon from '../PlusIcon/PlusIcon';
 import { HiOutlineTrash } from 'react-icons/hi';
 
 
+
 const Button = ({ children, type, onClick }) => {
 	switch (type) {
 		case "delete": {
@@ -12,7 +13,7 @@ const Button = ({ children, type, onClick }) => {
 		}
 		default: {
 			return (
-				<button className={styleButton.Button}>
+				<button className={styleButton.Button} onClick={onClick}>
 					{children}<PlusIcon />
 				</button>
 			);
