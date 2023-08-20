@@ -48,7 +48,7 @@ export const Page1 = () => {
 									recipes.map(value => (
 										<div className="category_item">
 											<CategoryCard item={value} key={value.name} />
-											<Button onClick={() => { setFilterData(value.category); }} className="category-button"> {value.category}</Button>
+											<Button onClick={() => { setFilterData(value.category) }} className="category-button"> {value.category}</Button>
 										</div>
 									))
 								}
@@ -57,13 +57,33 @@ export const Page1 = () => {
 					</div>
 				</div>
 					:
-					<ul className={'user_container'}>
-						{
-							filteredData.map(value => (
-								<List value={value} key={value.id} />
-							))
-						}
-					</ul>
+					<div style={{ position: "relative" }}>
+						<ul className={'List_container'}>
+							{
+								filteredData.map(value => (
+									<li key={value.ident} className='dishItem'>
+										<img key={value.ident} className='dishImage' src={value.img} alt={`${value.name} photo`} />
+										<h3 className='dishName'>{value.name}</h3>
+										<h4>{value.category}</h4>
+										<ul className='dishingredients'>
+											{
+												value.ingredients.map((subItem, index) => (
+													<li key={value.index}>
+														{subItem}
+													</li>
+												))
+											}
+										</ul>
+										<Button primary={true.toString()}>Show detailss</Button>
+
+									</li>
+								))
+							}
+						</ul>
+						<Button style={{ position: "absolute", right: 20 }} onClick={() => { setFilterData(null) }} primary={true.toString()}>Back</Button>
+					</div>
+
+
 			}
 
 		</div >
