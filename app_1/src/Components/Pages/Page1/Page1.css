@@ -1,0 +1,46 @@
+.App_content {
+	display: flex;
+	flex-direction: column;
+}
+
+.category {
+	background-color: #F8F8F8;
+}
+
+.category_container {
+	padding-top: 67px;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	max-width: 1600px;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 67px;
+}
+
+.category_items {
+	display: flex;
+	gap: 25px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.category_item {
+	display: flex;
+	flex-direction: column;
+	width: 23%;
+	transition: all 0.3s ease 0s;
+}
+
+.category_item:hover {
+	scale: 1.08;
+	box-shadow: 10px 12px 6px 0px rgba(95, 93, 93, 0.15);
+}
+
+.category-button {
+	font-size: 16px;
+	width: 100%;
+
+}
