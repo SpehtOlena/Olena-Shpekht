@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './App.css';
 import { Page1 } from "./Components/Pages/Page1/Page1";
 import List from './Components/Pages/List/List';
-import Searche from './Components/Pages/Searche/Searche';
+import Search from './Components/Pages/Search/Search';
 import Menu from "./Components/UI/Menu/Menu";
 
 
@@ -18,8 +18,8 @@ const menuItems = [
 	},
 	{
 
-		label: 'Searche',
-		element: <Searche />
+		label: 'Search',
+		element: <Search />
 	}
 ]
 

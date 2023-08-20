@@ -3,6 +3,7 @@ import bannerPhoto from '../../img/banner_img.png';
 import Button from '../Button/Button';
 import Typography from '../Typography/Typography';
 
+
 const Banner = () => {
 	return (
 		<div className='banner'>
