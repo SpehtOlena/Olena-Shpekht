@@ -34,7 +34,6 @@ export const recipes = [
 export const Page1 = () => {
 	const [filterData, setFilterData] = useState('')
 	const filteredData = RecipesArray.filter((value => value.category === filterData))
-	console.log(filteredData.length);
 	return (
 		<div className="App_content">
 			{
@@ -46,8 +45,8 @@ export const Page1 = () => {
 							<div className="category_items">
 								{
 									recipes.map(value => (
-										<div className="category_item">
-											<CategoryCard item={value} key={value.name} />
+										<div className="category_item" key={value.category}>
+											<CategoryCard item={value} />
 											<Button onClick={() => { setFilterData(value.category) }} className="category-button"> {value.category}</Button>
 										</div>
 									))
@@ -62,7 +61,7 @@ export const Page1 = () => {
 							{
 								filteredData.map(value => (
 									<li key={value.ident} className='dishItem'>
-										<img key={value.ident} className='dishImage' src={value.img} alt={`${value.name} photo`} />
+										<img className='dishImage' src={value.img} alt={`${value.name} photo`} />
 										<h3 className='dishName'>{value.name}</h3>
 										<h4 style={{ textAlign: 'center' }}>{value.category}</h4>
 										<ul className='dishingredients'>

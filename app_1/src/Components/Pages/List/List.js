@@ -18,7 +18,7 @@ const List = () => {
 				{
 					RecipesArray.map(item => (
 						<li key={item.ident} className='dishItem'>
-							<img key={item.ident} className='dishImage' src={item.img} alt={`${item.name} photo`} />
+							<img className='dishImage' src={item.img} alt={`${item.name} photo`} />
 							<h3 className='dishName'>{item.name}</h3>
 							<h4>{item.category}</h4>
 							<ul className='dishingredients'>
@@ -52,7 +52,7 @@ const List = () => {
 								<ul>
 									{
 										item.allIngredients.map((subItem) => (
-											<li key={item.index} className='IngrItems-modal'>
+											<li key={item.id2} className='IngrItems-modal'>
 												{subItem}<input type='checkbox' className={'checkbox-modal'} />
 											</li>
 										))
@@ -61,7 +61,7 @@ const List = () => {
 								<div className='description-modal'>
 									{
 										item.cooking.map((value) => (
-											<li key={value} className={'description-items'}>
+											<li key={value.description} className={'description-items'}>
 												{value}
 											</li>
 										))

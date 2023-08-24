@@ -6,9 +6,6 @@ import './Cards.css'
 
 const CategoryCard = ({ item }) => {
 	const [filterData, setFilterData] = useState(null)
-	const filteredData = RecipesArray.filter((item => item.category === filterData))
-	console.log(filteredData);
-
 	const { category, description, imgUrl } = item
 	return (
 		<div className='categoryItem'>
