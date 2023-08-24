@@ -64,7 +64,7 @@ export const Page1 = () => {
 									<li key={value.ident} className='dishItem'>
 										<img key={value.ident} className='dishImage' src={value.img} alt={`${value.name} photo`} />
 										<h3 className='dishName'>{value.name}</h3>
-										<h4>{value.category}</h4>
+										<h4 style={{ textAlign: 'center' }}>{value.category}</h4>
 										<ul className='dishingredients'>
 											{
 												value.ingredients.map((subItem, index) => (
@@ -80,7 +80,8 @@ export const Page1 = () => {
 								))
 							}
 						</ul>
-						<Button style={{ position: "absolute", right: 20 }} onClick={() => { setFilterData(null) }} primary={true.toString()}>Back</Button>
+						<Button onClick={() => { setFilterData(null) }} className={'buttonBack'}>Back</Button>
+
 					</div>
 
 

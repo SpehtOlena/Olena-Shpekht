@@ -1,5 +1,6 @@
 .ListWrapper {
 	background: #F8F8F8;
+	overflow: hidden;
 }
 
 .List_container {
@@ -13,7 +14,7 @@
 	max-width: 1600px;
 	padding: 20px;
 	margin: 0 auto;
-
+	margin-top: 100px;
 }
 
 .dishItem {
@@ -64,4 +65,124 @@
 .listButton {
 	font-size: 16px;
 	border-radius: 0;
+}
+
+.modal-overlay {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: fixed;
+	z-index: 3;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.dish-container {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 20px;
+	margin-top: 30px;
+}
+
+.dish-info {
+	width: 30%;
+	background-color: #fff;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	min-height: 640px;
+}
+
+.dish-content {
+	display: flex;
+	flex-direction: column;
+	width: 66%;
+	min-height: 800px;
+	background-color: #fff;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.dishImage-modal {
+	width: 100%;
+}
+
+.dishName-modal {
+	color: #000;
+	font-family: Quando;
+	font-size: 24px;
+	font-weight: 400;
+	width: 100%;
+	padding: 50px;
+}
+
+.dish-prev {
+	color: rgba(0, 0, 0, 0.70);
+	font-family: Quando;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 30px;
+	padding: 0px 50px;
+}
+
+.description-modal {
+	background: #FFC759;
+	margin: 10px 30px;
+	padding: 52px;
+	color: rgba(0, 0, 0, 0.72);
+	font-family: Quando;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: normal;
+	flex: 1 1 auto;
+}
+
+.IngrItems-modal {
+	color: rgba(0, 0, 0, 0.70);
+	font-family: Quando;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	background: #FBFBFB;
+	margin: 30px 31px 21px;
+	height: 56px;
+	padding-left: 89px;
+	padding-right: 31px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.checkbox-modal {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.checkbox-modal:hover {
+	border: 1px solid #4f5fe9;
+
+}
+
+.closeButton {
+	display: flex;
+	margin: 0px 30px 30px;
+	justify-content: flex-end;
+	position: relative;
+	bottom: 0;
+	right: 0;
+}
+
+.description-items {
+	color: rgba(0, 0, 0, 0.72);
+	font-family: Quando;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-bottom: 20px;
 }

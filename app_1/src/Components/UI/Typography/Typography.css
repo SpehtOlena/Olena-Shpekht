@@ -8,9 +8,11 @@
 }
 
 .typography-text {
+	display: inline-block;
 	color: rgba(0, 0, 0, 0.50);
 	font-family: Poppins;
 	font-size: 24px;
 	font-weight: 400;
 	line-height: 1.5;
+	align-items: start;
 }
