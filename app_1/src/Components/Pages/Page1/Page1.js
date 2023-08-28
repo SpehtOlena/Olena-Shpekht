@@ -5,8 +5,8 @@ import Banner from "../../UI/Banner/Banner.js";
 import Typography from "../../UI/Typography/Typography";
 import Button from "../../UI/Button/Button.js";
 import './Page1.css';
-import List from "../List/List.js";
 import RecipesArray from "../../Recipes/CategoryCard/RecipesArray.js";
+import RecipeCard from "../../Recipes/RecipeCard/RecipeCard.js";
 
 export const recipes = [
 	{
@@ -59,24 +59,7 @@ export const Page1 = () => {
 					<div style={{ position: "relative" }}>
 						<ul className={'List_container'}>
 							{
-								filteredData.map(value => (
-									<li key={value.ident} className='dishItem'>
-										<img className='dishImage' src={value.img} alt={`${value.name} photo`} />
-										<h3 className='dishName'>{value.name}</h3>
-										<h4 style={{ textAlign: 'center' }}>{value.category}</h4>
-										<ul className='dishingredients'>
-											{
-												value.ingredients.map((subItem, index) => (
-													<li key={value.index}>
-														{subItem}
-													</li>
-												))
-											}
-										</ul>
-										<Button primary={true.toString()}>Show detailss</Button>
-
-									</li>
-								))
+								filteredData.map(value => <RecipeCard item={value} />)
 							}
 						</ul>
 						<Button onClick={() => { setFilterData(null) }} className={'buttonBack'}>Back</Button>

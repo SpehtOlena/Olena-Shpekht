@@ -40,7 +40,7 @@ const List = () => {
 			<Modal isOpen={modalOpen} onClose={closeModal}>
 				{
 					filteredRecipe.map(item => (
-						<div className={'dish-container'} key={item.id1}>
+						<div className={'dish-container'} key={item.id}>
 							<div className={'dish-info'}>
 								<img className='dishImage-modal' src={item.img} alt={`${item.name} photo`} />
 								<h3 className='dishName-modal'>{item.name}</h3>
